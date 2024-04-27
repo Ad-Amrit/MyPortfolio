@@ -1,0 +1,22 @@
+.container{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+/* background-color: rgb(243, 240, 236); */
+align-items: center;
+margin: 1% 20%;
+
+}
+
+
+.name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.events a{
+    margin-right: 30px;
+    background-color: #EBF4FA;
+    padding: 5px 15px;
+    border-radius: 25%;
+}

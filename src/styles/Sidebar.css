@@ -1,0 +1,12 @@
+.sidebar {
+  position: fixed;
+  top: 0; /* Start at the top of the viewport */
+  right: 0; /* Position it at the right edge */
+  height: 100vh; /* Set height to 100% viewport height */
+  width: 200px; /* Set desired sidebar width */
+  background-color: #f0f0f0; /* Background color */
+  padding: 2rem; /* Padding for content */
+  display: flex; /* Allow stacking logo and links vertically */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Align content vertically */
+}

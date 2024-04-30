@@ -12,13 +12,14 @@ function App() {
     <>
         <Router>
           <Navbar/>
+          <Sidebar/>
             <Routes>
               <Route exact path='/' element={<Home/>} />
               <Route path='/Projects' element={<Projects/>} />
               <Route path='/Contact' element={<Contact/>} />
             </Routes>
         </Router>
-        <Sidebar/>
+        
     </>
   )
 }

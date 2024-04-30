@@ -1,0 +1,24 @@
+.Projects {
+    margin: 0px 100px;
+}
+
+.Projects div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.Projects div section {
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: auto;
+}
+
+
+.Projects div section img{
+    width: 200px;
+    height: auto;
+}

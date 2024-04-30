@@ -3,10 +3,31 @@ import '../styles/Projects.css'
 
 const Projects = () => {
   return (
-    <div>
-        <h1>About My Projects</h1>
+    <div className='Projects'>
         <div>
-            <h1>First Project</h1>
+          <section>
+            <img src="../src/assets/images/futsamanagement.png" alt="Image" />
+            <h1>FUTSA (Futsal Booking and Management System)</h1>
+            <a href="https://futsa-finalproject-web.vercel.app/" target='_blank'>Preview</a>
+          </section>
+
+          <section>
+            <img src="../src/assets/images/movieapp.jpeg" alt="Image" />
+            <h1>MovieApp</h1>
+            <a href="https://github.com/Ad-Amrit/MovieApp.git" target='_blank'>Preview</a>
+          </section>
+
+          <section>
+            <img src="../src/assets/images/unitconverter.png" alt="Image" />
+            <h1>Unit Converter</h1>
+            <a href="https://github.com/Ad-Amrit/Unit-Converter.git" target='_blank'>Preview</a>
+          </section>
+
+          <section>
+            <img src="../src/assets/images/futsabooking.png" alt="Image" />
+            <h1>Futsal Booking System</h1>
+            <a href="https://futsa-finalproject-web.vercel.app/" target='_blank'>Preview</a>
+          </section>
         </div>
     </div>
   )

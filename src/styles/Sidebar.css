@@ -1,12 +1,38 @@
 .sidebar {
-  position: fixed;
-  top: 0; /* Start at the top of the viewport */
-  right: 0; /* Position it at the right edge */
-  height: 100vh; /* Set height to 100% viewport height */
-  width: 200px; /* Set desired sidebar width */
-  background-color: #f0f0f0; /* Background color */
-  padding: 2rem; /* Padding for content */
-  display: flex; /* Allow stacking logo and links vertically */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: space-between; /* Align content vertically */
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+  /* width: 20px;  */
+  height: 100vh; 
+  background-color: #f0f0f0;
+  padding: 2px;
+}
+
+.sidebar .logo img {
+  width: 50px; /* Adjust width as desired */
+  height: auto;  /* Maintain aspect ratio */
+  margin: 150px 20px 52px 20px;
+  
+}
+
+
+.sidebar ul {
+  list-style: none; 
+  padding: 20px; 
+}
+
+.sidebar li {
+  margin-bottom: 80px;
+  
+}
+
+.sidebar a {
+  color: #333; 
+  text-decoration: none; 
+  font-weight: bold;
+  font-size: xxx-large;
+}
+
+.sidebar a:hover {
+  color: #000; /* Change link color on hover */
 }

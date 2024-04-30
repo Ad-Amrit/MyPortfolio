@@ -30,46 +30,51 @@ const Home = () => {
         <img src={Profile} alt="Image" />
       </div>
       </div>
-      <div>
+
+      
+      <div className='Skills'>
+
+      <div className='Languages'>
         <h1>Languages</h1>
-        <div>
-          <section>
+        <div className='SkillsGrid'>
+          <section className='Javascript'>
              <img src="../src/assets/images/javascript.png" alt="Javascript" />
              <p>JAVASCRIPT</p>
           </section>
         </div>
       </div>
 
-      <div>
+      <div className='FrontEnd'>
         <h1>Front-end Tools</h1>
-        <div>
-          <section>
+        <div className='SkillsGrid'>
+          <section className='React'>
             <img src="../src/assets/images/reactjs.png" alt="React" />
             <p>React Js</p>
           </section>
-          <section>
+          <section className='Bootstrap'>
             <img src="../src/assets/images/bootstrap.png" alt="Bootstrap" />
             <p>Bootstrap</p>
           </section>
         </div>
       </div>
 
-      <div>
+      <div className='DevTools'>
         <h1>Dev-Tools</h1>
-        <div>
-          <section>
+        <div className='SkillsGrid'>
+          <section className='Git'>
             <img src="../src/assets/images/git.png" alt="Git" />
             <p>Git</p>
           </section>
-          <section>
+          <section className='Github'>
             <img src="../src/assets/images/github.png" alt="GitHub" />
             <p>Github</p>
           </section>
-          <section>
+          <section className='npm'>
             <img src="../src/assets/images/npm.png" alt="npm" />
             <p>npm</p>
           </section>
         </div>
+      </div>
       </div>
       
     </div>

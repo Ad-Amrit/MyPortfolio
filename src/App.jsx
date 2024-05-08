@@ -4,7 +4,7 @@ import Home from './components/Home'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
+// import Sidebar from './components/Sidebar'
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <>
         <Router>
           <Navbar/>
-          <Sidebar/>
+          {/* <Sidebar/> */}
             <Routes>
               <Route exact path='/' element={<Home/>} />
               <Route path='/Projects' element={<Projects/>} />

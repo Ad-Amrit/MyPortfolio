@@ -14,7 +14,7 @@ function Contact() {
     
     try {
       // Make a POST request to the backend server
-      await axios.post('http://localhost:5174/api/send-email', { name, email, message });
+      await axios.post('http://localhost:5000/api/send-email', { name, email, message });
       setSubmitted(true);
     } catch (error) {
       console.error('Error sending email:', error);

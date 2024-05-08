@@ -1,24 +1,40 @@
 .Projects {
-    margin: 0px 100px;
-}
-
-.Projects div{
+    margin: 50px 100px;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0.1);
+  }
+  
+  .Projects div {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 50px;
-}
-
-.Projects div section {
+  }
+  
+  .Projects div section {
     box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     width: 300px;
     height: auto;
-}
-
-
-.Projects div section img{
+  }
+  
+  .Projects div section img {
     width: 200px;
     height: auto;
-}
+  }
+  
+  .preview-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #296ed4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .preview-btn:hover {
+    background-color: #083769;
+  }
+  

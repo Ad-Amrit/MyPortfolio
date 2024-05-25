@@ -1,5 +1,6 @@
 .Home {
     padding: 15px 100px;
+
 }
 
 .Main{
@@ -16,62 +17,78 @@
     margin-top: 140px;
 }
 
+.About{
+  font-size: 1.1rem;
+  margin-top: 40px;
+  margin-inline: 60px;
+}
+
+.Typewriter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  border-right: .15em solid orange;
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 224, 212);
+}
+
 .links{
   display: flex;
   flex-direction: row;
   list-style: none;
 }
 
-.links li{
-  margin-top: 50px;
+ .links li{
+  margin-top: 40px;
   padding-right: 40px;
-}
+ }
 
-.links li a{
+ .links li a{
   font-size: 50px;
-  color: rgb(48, 189, 189);
-}
+  color: rgb(32, 6, 6);
+ }
 
-.links li a:hover{
-  color: rgb(0, 225, 255);
-}
+ .links li a:hover{
+  color: rgb(34, 114, 235);
+ }
 
 .ImageSection img{
     width: 600px;
     height: auto;
 }
-
-.Skills {
-    display: grid;
+.Skills{
+    display: flex;
+    flex-direction: column;
+}
+ .Skills div {
     justify-content: center;
-    
-  }
-  
-  .SkillsGrid {
+ }
+
+ .SkillsGrid {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     gap: 50px;
-  }
+    margin-top: 20px;
+ }
 
-  .SkillsGrid section {
+ .SkillsGrid section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 20px;
   }
 
-  .Skills section img {
+  .SkillsGrid section img {
     width: 200px;
     height: auto;
    
   }
 
-  
-  .Skills div h1{
+.Top div h1{
     text-decoration: underline;
     text-shadow: 2px;
-    text-decoration-color: aqua;
+    text-decoration-color: rgb(238, 162, 100);
     text-align: center;
-  }
+}
 
   

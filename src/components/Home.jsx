@@ -1,15 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import '../styles/Home.css'
 import Profile from '../assets/images/profile.png'
-import Typewriter from 'react-typewriter-effect';
-
-// const [Typewriter, setTypewriter] = useState('')
+import Typewriter from 'typewriter-effect'
 
 const Home = () => {
-  
   return (
     <div className='Home'>
       <div className='Main'>
@@ -19,12 +16,12 @@ const Home = () => {
         <p>I'm a</p>
         <Typewriter
           options={{
-           strings: ['Software Engineer', 'Web Developer', 'React Developer'],
-           autoStart: true,
-           loop: true,
+          strings: ['Software Engineer', 'Web Developer', 'React Developer'],
+          autoStart: true,
+          loop: true,
           }}
-        />   
-        <p>As a recent graduate in software engineering, I'm brimming with
+        />
+        <p className='About'>As a recent graduate in software engineering, I'm brimming with
            passion for web development and a thirst for knowledge. While I'm 
            new to the professional world, I've been actively honing my
            skills in HTML, CSS, and JavaScript. I'm particularly interested
@@ -57,9 +54,9 @@ const Home = () => {
       </div>
 
       
-      <div className='Skills'>
+      <div className='Top'>
 
-      <div className='Languages'>
+      <div className='Skills'>
         <h1>Languages</h1>
         <div className='SkillsGrid'>
           <section className='Javascript'>
@@ -69,7 +66,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='FrontEnd'>
+      <div className='Skills'>
         <h1>Front-end Tools</h1>
         <div className='SkillsGrid'>
           <section className='React'>
@@ -83,7 +80,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='DevTools'>
+      <div className='Skills'>
         <h1>Dev-Tools</h1>
         <div className='SkillsGrid'>
           <section className='Git'>

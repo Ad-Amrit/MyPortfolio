@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
 function Contact() {
@@ -9,13 +9,27 @@ function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(null);
 
+  const publicKey = 'vNDz6YLvL_pWGZD1x';
+
+  emailjs.init({
+    publicKey,
+  });
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
-      // Make a POST request to the backend server
-      await axios.post('http://localhost:5000/api/send-email', { name, email, message });
-      setSubmitted(true);
+      const response = await emailjs.sendForm(
+        'service_kahdex9', //Service ID
+        'template_1srth57', //Template ID
+        e.target,
+      );
+
+      if (response.status === 200) {
+        setSubmitted(true);
+      } else {
+        setError('An error occurred while sending the email. Please try again later.');
+      }
     } catch (error) {
       console.error('Error sending email:', error);
       setError('An error occurred while sending the email. Please try again later.');
@@ -25,8 +39,8 @@ function Contact() {
   return (
     <div className="contact-form">
       <h1>Contact Me</h1>
-      <p className='Email'>amritadhikari.dev@gmail.com</p>
-      <p className='Comment'>Feel free to contact me with any inquiries or questions!</p>
+      <p className="Email">amritadhikari.dev@gmail.com</p>
+      <p className="Comment">Feel free to contact me with any inquiries or questions!</p>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
